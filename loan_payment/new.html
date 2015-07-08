@@ -36,20 +36,21 @@
               <span class="icon-bar"></span>
             </button>
             <!-- I grabbed the calculator font from awesome fonts -->
-            <a class="navbar-brand" href="#"><i class="fa fa-calculator"></i> Omnicalc</a>
+            <a class="navbar-brand" href="../../omnicalc_mockups/word_count/new.html">
+                            <i class="fa fa-calculator"></i> Omnicalc</a>
           </div>
           </div>
           </nav>
      <!-- I used the shoelace tool to format the tables on the page -->
       <div class="container">
           <div class="row">
-              <div class="col-md-offset-0 col-md-3">
+              <div class="col-md-offset-0 col-md-3"   hidden-xs hidden-sm>
                 <!-- Next I set up the list underneath the header section and used awesome fonts on each list item -->
                 <div class="list-group">
-                <a href="#" class="list-group-item"><i class="fa fa-book"></i> Word Count</a>
-                <a href="#" class="list-group-item"><i class="fa fa-money"></i> Loan Payment</a>
-                <a href="#" class="list-group-item"><i class="fa fa-clock-o"></i> Time Between</a>
-                <a href="#" class="list-group-item"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
+                <a href="../word_count/new.html" class="list-group-item"><i class="fa fa-book"></i> Word Count</a>
+                <a href="../loan_payment/new.html" class="list-group-item"><i class="fa fa-money"></i> Loan Payment</a>
+                <a href="../time_between/new.html" class="list-group-item"><i class="fa fa-clock-o"></i> Time Between</a>
+                <a href="../descriptive_statistics/new.html" class="list-group-item"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
               </div>
             </div>
               <!-- Next, I created a panel to the right of the list -->
@@ -57,32 +58,32 @@
               <div class="panel panel-default">
               <div class="panel-heading">New Loan Payment Calculation</div>
               <div class="panel-body">
-              <form class="form-horizontal">
+                  <form action="../../omnicalc_mockups/loan_payment/results.html" class="form-horizontal">
         <!-- First section of the panel -->
         <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">APR</label>
+          <label for="annual_p_rt" class="col-sm-2 control-label">APR</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Enter the APR of the loan (as a percent)">
+            <input name="annual_p_rt"="number" step="any" class="form-control" id="annual_p_rt" placeholder="Enter the APR of the loan (as a percent)">
           </div>
         </div>
         <!-- Second section of the panel -->
         <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Years</label>
+          <label for="years_loan" class="col-sm-2 control-label">Years</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Enter the number of years to repay the loan">
+            <input name="years_loan"type="number" min="1" class="form-control" id="years_loan" placeholder="Enter the number of years to repay the loan">
           </div>
         </div>
         <!-- Third section of the panel -->
         <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Principal</label>
+          <label for="principal_loan" class="col-sm-2 control-label">Principal</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Enter the principal of the loan">
+            <input name="principal_loan" type="number" min="1" class="form-control" id="principal_loan" placeholder="Enter the principal of the loan">
           </div>
         </div>
         <!-- Submit button -->
          <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-primary btn-block">Submit</button>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
           </div>
         </div>
       </form>
